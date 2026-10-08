@@ -1,0 +1,278 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Noto Sans", sans-serif;
+}
+*{
+    text-decoration: none;
+}
+.container{
+    margin: 0 auto;
+    width: 1200px;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+header{
+    display: flex;
+    padding-top: 15px;
+}
+.main-menu{
+    flex-grow: 1;
+}
+.main-menu-list{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+}
+.main-menu-list a{
+    font-size: 30px;
+    line-height: 41px;
+    color: #2a3d8f;
+}
+.main-menu-list a:hover{
+    color: #3893cc;
+}
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 35px 0;
+    color: #000;
+}
+.footer-wrapper{
+    background-color: #b5d4c5;
+}
+.hashtag{
+    margin: 0;
+    padding: 0;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.footer-social{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.copyright{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+}
+.slogan{
+    height: 558px;
+    background-image: url(img/innsbruck1.png);
+    background-color: #dbe8f7;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.slogan h1{
+    margin: 0;
+    padding-top: 240px;
+    font-size: 60px;
+    line-height: 82px;
+    color: #fff;
+}
+h2{
+    color: #1a3d8f;
+    font-size: 36px;
+    line-height: 49px;
+}
+h3{
+    font-size: 30px;
+    line-height: 41px;
+}
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.about-numbers-list{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    padding-left: 20px;
+}
+.about-numbers-list li::before{
+    content: "✓ ";
+}
+.marketing{
+    display: flex;
+    flex-direction: column;
+    background-image: url(img/skier.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center right;
+    width: 30%;
+}
+.marketing p{
+    margin: 0;
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 2vw;
+    line-height: 33px;
+}
+.marketing a{
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 60px;
+    padding: 5px 10px;
+    background-color: #fff;
+    opacity: 0.7;
+    align-self: flex-end;
+    color: #000;
+}
+.about-weather-graph{
+    border: 1px solid #c0c0c0;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+.about-weather-graph figcaption{
+    font-size: 22px;
+    line-height: 33px;
+    background-color: #888;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+}
+.gallery-list{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.gallery-item{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+    align-items: center;
+    min-height: 256px;
+    text-align: center;
+    color: #fff;
+    background-color: #b5d4c5;
+}
+.gallery-item h3{
+    text-transform: uppercase;
+    padding: 45px 59px 60px;
+    width: 400px;
+}
+.transfer{
+    border-collapse: collapse;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+thead{
+    background-color:rgb(32, 46, 92);
+    color: #fff;
+}
+td, th{
+    border: 1px solid #333;
+    padding: 5px;
+    text-align: center;
+}
+@media(max-width:1200px){
+    .container{
+        width: 90%;
+    }
+    .main-menu-list a{
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .slogan h1{
+        font-size: 40px;
+        line-height: 62px;
+    }
+    .gallery-item{
+        flex-direction: column;
+    }
+    .gallery-item:nth-child(2){
+        flex-direction: column-reverse;
+    }
+    .gallery-item h3{
+        width: auto;
+    }
+    .gallery-item img{
+        width: 100%;
+    }
+    iframe{
+        width: 100%;
+    }
+}
+@media(max-width:425px){
+    h2{
+        font-size: 26px;
+        line-height: 30px;
+    }
+    h3{
+        font-size: 20px;
+        line-height: 25px;
+    }
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+    header img{
+        width: 55px;
+        margin-bottom: 5px;
+    }
+    .main-menu{
+        width: 100%;
+    }
+    .main-menu-list{
+        margin: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-menu-list li{
+        border-bottom: 1px solid #e5e5e5;
+        width: 100%;
+    }
+    .main-menu-list a{
+        text-align: center;
+        font-size: 20px;
+        line-height: 20px;
+        text-transform: uppercase;
+        display: block;
+        padding: 10px 18px;
+    }
+    .wrapper{
+        flex-direction: column;
+    }
+    .marketing{
+        width: 100%;
+        margin-top: 10px;
+    }
+    .marketing p{
+        font-size: 3vw;
+    }
+    .about-weather-graph figcaption{
+        font-size: 12px;
+        line-height: 23px;
+    }
+    footer{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-social{
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+}
+@media(max-width:400px){
+    .transfer{
+        display: none;
+    }
+}
